@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+html,
+body,
+.wrapper {
+	@apply h-full w-full;
+}
+body {
+	@apply overflow-clip;
+}
+.wrapper {
+	@apply grid grid-rows-[auto_1fr_auto] overflow-y-auto;
+}
+main > * {
+	@apply min-w-0;
+}
+
+.container {
+	@apply mx-auto max-w-8xl px-5;
+}
